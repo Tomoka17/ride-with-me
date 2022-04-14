@@ -1,0 +1,77 @@
+<body class="text-center">
+<style>
+.select-box{
+  height: 30px;
+  width: 185px;
+}
+.actions{
+  margin-top: 10px;
+}
+</style>
+
+<h1>Sign up</h1>
+
+<%= form_with model: @user, url: user_registration_path, local: true do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="field">
+    <%= f.label :nickname %><br />
+    <%= f.text_field :nickname, autofocus: true, autocomplete: "nickname" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autocomplete: "email" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "new-password" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :genre %><br />
+    <%= f.collection_select(:genre_id, Genre.all, :id, :name, {include_blank: ''}, {class:"select-box"}) %>
+  </div>
+
+  <div class="field">
+    <%= f.label :bike_name %><br />
+    <%= f.text_field :bike_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :age %><br />
+    <%= f.collection_select(:age_id, Age.all, :id, :name, {include_blank: ''}, {class:"select-box"}) %>
+  </div>
+
+  <div class="field">
+    <%= f.label :gender %><br />
+    <%= f.collection_select(:gender_id, Gender.all, :id, :name, {include_blank: ''}, {class:"select-box"}) %>
+  </div>
+
+  <div class="field">
+    <%= f.label :prefecture %><br />
+    <%= f.collection_select(:prefecture_id, Prefecture.all, :id, :name, {include_blank: ''}, {class:"select-box"}) %>
+  </div>
+
+  <div class="field">
+    <%= f.label :personality %><br />
+    <%= f.collection_select(:personality_id, Personality.all, :id, :name, {include_blank: ''}, {class:"select-box"}) %>
+  </div>
+  
+
+  <div class="actions">
+    <%= f.submit "Sign up", class:"btn btn-info" %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>
+</body>
