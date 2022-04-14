@@ -1,0 +1,54 @@
+<mxfile host="65bd71144e">
+    <diagram id="ExUeevvABAvY94j1dYYS" name="ページ1">
+        <mxGraphModel dx="442" dy="718" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="11" style="edgeStyle=none;html=1;exitX=0.999;exitY=0.598;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=24;endArrow=ERoneToMany;endFill=0;exitPerimeter=0;" parent="1" source="3" target="6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" style="edgeStyle=none;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=-0.004;entryY=0.445;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=24;fontColor=#FF6666;endArrow=ERoneToMany;endFill=0;" parent="1" source="3" target="4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" style="edgeStyle=none;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;fontSize=24;fontColor=#FF6666;endArrow=ERoneToMany;endFill=0;exitX=1.004;exitY=0.894;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="3" target="8" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="" style="edgeStyle=none;html=1;fontSize=24;fontColor=#FF8000;endArrow=ERoneToMany;endFill=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="199.09" y="427" as="sourcePoint"/>
+                        <mxPoint x="199.09" y="517" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3" value="&lt;font color=&quot;#ff8000&quot;&gt;users table&lt;br&gt;&lt;/font&gt;&lt;br&gt;nickname&lt;br&gt;email&lt;br&gt;genre_id&lt;br&gt;bike_name&lt;br&gt;age_id&lt;br&gt;gender_id&lt;br&gt;prefecture_id&lt;br&gt;personality_id" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;fontSize=24;strokeColor=#d79b00;fillColor=#ffe6cc;" parent="1" vertex="1">
+                    <mxGeometry x="20" width="360" height="420" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" style="edgeStyle=none;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=0.996;entryY=0.297;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=24;fontColor=#FF6666;endArrow=ERoneToMany;endFill=0;" parent="1" source="4" target="6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" style="edgeStyle=none;html=1;fontSize=24;fontColor=#FF6666;endArrow=ERoneToMany;endFill=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="4" target="8" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1000" y="460" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="4" value="&lt;font style=&quot;font-size: 24px&quot;&gt;&lt;font color=&quot;#3333ff&quot;&gt;gareges table&lt;/font&gt;&lt;br&gt;&lt;br&gt;name&lt;br&gt;&lt;br&gt;&lt;/font&gt;" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;fontSize=18;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+                    <mxGeometry x="830" width="320" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="&lt;font color=&quot;#00cc66&quot;&gt;garege_users table&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;user&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#3333ff&quot;&gt;garege&lt;/font&gt;" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;fontSize=24;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="470" y="160" width="280" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="&lt;font color=&quot;#ff6666&quot;&gt;messages table&lt;/font&gt;&lt;br&gt;&amp;nbsp;&lt;br&gt;content&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;user&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#3333ff&quot;&gt;garage&lt;/font&gt;" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;fontSize=24;glass=0;shadow=0;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+                    <mxGeometry x="830" y="360" width="320" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" style="edgeStyle=none;html=1;entryX=-0.004;entryY=0.2;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=24;fontColor=#FF8000;endArrow=ERoneToMany;endFill=0;" parent="1" source="25" target="27" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="&lt;font color=&quot;#9933ff&quot;&gt;tourings table&lt;br&gt;&lt;/font&gt;&lt;br&gt;title&lt;br&gt;weather_id&lt;br&gt;mileage&lt;br&gt;record&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;user&lt;/font&gt;" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;fontSize=24;strokeColor=#d6b656;fillColor=#fff2cc;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="517" width="350" height="310" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="comments table&lt;br&gt;&lt;br&gt;text&lt;br&gt;&lt;font color=&quot;#ff8000&quot;&gt;user&lt;/font&gt;" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;fontSize=24;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" parent="1" vertex="1">
+                    <mxGeometry x="490" y="630" width="230" height="190" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
