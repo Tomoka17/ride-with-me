@@ -7,7 +7,6 @@ class User < ApplicationRecord
     #has_many :garages,thorough: :garage_users
     #has_many :messages
         
-
     extend ActiveHash::Associations::ActiveRecordExtensions
     belongs_to :genre
     belongs_to :age
