@@ -29,7 +29,7 @@
 | ------- | ------- | --------|
 | title   | string  | null: false |
 | weather_id | integer | null: false |
-| milage  | integer | null: false |
+| mileage  | integer | null: false |
 | record  | text  |  null: false |
 | user | references | null: false, foreign_key: true |
 
